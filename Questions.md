@@ -4,7 +4,7 @@ This document contains solutions to web scraping and HTTP request tasks using **
 
 ---
 
-# ✅ **Q1. Fetch HTML content & print status code**
+# **Q1. Fetch HTML content & print status code**
 
 ```python
 import requests
@@ -18,7 +18,7 @@ print("HTML Content:\n", response.text)
 
 ---
 
-# ✅ **Q2. Send GET request to free API & extract JSON**
+# **Q2. Send GET request to free API & extract JSON**
 
 ```python
 import requests
@@ -36,7 +36,7 @@ print("Body:", first_post['body'])
 
 ---
 
-# ✅ **Q3. Send GET request with query parameters**
+# **Q3. Send GET request with query parameters**
 
 ```python
 import requests
@@ -52,7 +52,7 @@ print("Response JSON:", response.json())
 
 ---
 
-# ✅ **Q4. Parse HTML and extract `<h1>` and `<p>` tags using BeautifulSoup**
+# **Q4. Parse HTML and extract `<h1>` and `<p>` tags using BeautifulSoup**
 
 ```python
 from bs4 import BeautifulSoup
@@ -81,7 +81,7 @@ for p in soup.find_all("p"):
 
 ---
 
-# ✅ **Q5. Extract all hyperlinks (`<a>`) and print URLs + text**
+# **Q5. Extract all hyperlinks (`<a>`) and print URLs + text**
 
 ```python
 import requests
@@ -101,7 +101,7 @@ for link in soup.find_all("a"):
 
 ---
 
-# ✅ **Q6. Scrape an HTML table & print headers and rows**
+# **Q6. Scrape an HTML table & print headers and rows**
 
 ```python
 import requests
@@ -132,7 +132,7 @@ for r in rows:
 
 ---
 
-# ✅ **Q7. Extract all images (`<img>`) – print src and alt**
+# **Q7. Extract all images (`<img>`) – print src and alt**
 
 ```python
 import requests
@@ -152,7 +152,7 @@ for img in soup.find_all("img"):
 
 ---
 
-# ✅ **Q8. Extract data from a specific `<div class="content">` using CSS selectors**
+# **Q8. Extract data from a specific `<div class="content">` using CSS selectors**
 
 ```python
 import requests
@@ -175,7 +175,7 @@ for section in content_section:
 
 ---
 
-# ✅ **Q9. Scrape blog titles + URLs and save into CSV**
+# **Q9. Scrape blog titles + URLs and save into CSV**
 
 ```python
 import requests
@@ -207,7 +207,7 @@ print("Data saved into blog_posts.csv")
 
 ---
 
-# ✅ **Q10. Scrape product names & prices from a product listing**
+# **Q10. Scrape product names & prices from a product listing**
 
 ❗ *Note: Example used on a demo site (books.toscrape.com).*
 
